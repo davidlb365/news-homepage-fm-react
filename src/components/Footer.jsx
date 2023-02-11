@@ -42,8 +42,8 @@ const Footer = () => {
                     <img className="footer__image"
                         src="images/image-gaming-growth.jpg"
                         alt="gaming image"
-                        width={200}
-                        height={254} />
+                        width="200"
+                        height="254" />
                 </picture>
                 <div className="footer__content">
                     <h3 className="footer__number">03</h3>
