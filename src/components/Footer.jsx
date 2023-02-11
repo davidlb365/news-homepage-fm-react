@@ -9,7 +9,9 @@ const Footer = () => {
                     <source srcSet="images/image-retro-pcs.webp" type="image/webp" />
                     <img className="footer__image"
                         src="images/image-retro-pcs.jpg"
-                        alt="retro image" />
+                        alt="retro image"
+                        width="200" 
+                        height="254"  />
                 </picture>
                 <div className="footer__content">
                     <h3 className="footer__number">01</h3>
@@ -23,7 +25,9 @@ const Footer = () => {
                     <source srcSet="images/image-top-laptops.webp" type="image/webp" />
                     <img className="footer__image"
                         src="images/image-top-laptops.jpg"
-                        alt="laptops image" />
+                        alt="laptops image"
+                        width="200" 
+                        height="254" />
                 </picture>
                 <div className="footer__content">
                     <h3 className="footer__number">02</h3>
@@ -37,7 +41,9 @@ const Footer = () => {
                     <source srcSet="images/image-gaming-growth.webp" type="image/webp" />
                     <img className="footer__image"
                         src="images/image-gaming-growth.jpg"
-                        alt="gaming image" />
+                        alt="gaming image"
+                        width="200" 
+                        height="254" />
                 </picture>
                 <div className="footer__content">
                     <h3 className="footer__number">03</h3>

@@ -5,14 +5,16 @@ const Main = () => {
         <main>
             <div className="grid" >
                 <picture className="grid__picture">
-                    <source media="(max-width: 767px)" srcSet="images/image-web-3-mobile.avif" type="image/avif" />
-                    <source media="(min-width: 768px)" srcSet="images/image-web-3-desktop.avif" type="image/avif" />
-                    <source media="(max-width: 767px)" srcSet="images/image-web-3-mobile.webp" type="image/webp" />
-                    <source media="(min-width: 768px)" srcSet="images/image-web-3-desktop.webp" type="image/webp" />
-                    <source media="(min-width: 768px)" srcSet="images/image-web-3-desktop.jpg" />
+                    <source media="(max-width: 767px)" srcSet="images/image-web-3-mobile.avif" width="686" height="600" type="image/avif" />
+                    <source media="(min-width: 768px)" srcSet="images/image-web-3-desktop.avif" width="1460" height="600" type="image/avif" />
+                    <source media="(max-width: 767px)" srcSet="images/image-web-3-mobile.webp" width="686" height="600"  type="image/webp" />
+                    <source media="(min-width: 768px)" srcSet="images/image-web-3-desktop.webp" width="1460" height="600"  type="image/webp" />
+                    <source media="(min-width: 768px)" srcSet="images/image-web-3-desktop.jpg" width="1460" height="600" />
                     <img className="grid__image"
                         src="images/image-web-3-mobile.jpg"
-                        alt="image web 3" />
+                        alt="image web 3"
+                        width="686"
+                        height="600" />
                 </picture>
                 <h2 className="grid__title">The Bright Future of Web 3.0?</h2>
                 <div className="grid__more">
