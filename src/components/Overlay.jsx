@@ -2,13 +2,13 @@ import useNews from "../hooks/useNews"
 
 
 const Overlay = () => {
-    const {clicked, setClicked, overlayMounted, setOverlayMounted} = useNews()
+    const {setClicked, overlayMounted, setOverlayMounted} = useNews()
 
     const handleAnimationEnd = () => {
         if(!overlayMounted) setClicked(false)
     }
     return (
-        <div className="overlay">
+        <div className={`overlay ${overlayMounted ? 'fadeinOpacity' : 'fadeoutOpacity'}`}>
             <div className={`popup__div ${overlayMounted ? 'fadein' : 'fadeout'}`} id="popup-div" onAnimationEnd={handleAnimationEnd}>
                 <div className="popup__close">
                     <button className="popup__button" id="popup-button" onClick={() => {
