@@ -252,9 +252,15 @@ main {
 
 .footer__section {
     display: grid;
-    grid-template-columns: minmax(auto, 200px) 65%;
+    grid-template-columns: 150px 1fr;
     gap: 1rem;
     margin-bottom: 1.7rem;
+}
+
+@media (min-width: 640px) {
+    .footer__section {
+        grid-template-columns: minmax(auto, 200px) 55%;
+    }
 }
 
 .footer__number {
@@ -267,7 +273,7 @@ main {
     display: block;
     color: black;
     font-weight: 800;
-    margin-block: 1rem;
+    margin-block: .8rem;
     text-decoration: none;
 }
 
@@ -286,6 +292,7 @@ main {
     .footer {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
         margin-bottom: 4rem;
     }
 }
